@@ -31,13 +31,12 @@ class WebService{
             $url = self::WEBSERVICE_SERVER.$endpoint;
             $request = new Http();
             $request::accept('application/json');
+            $headers['Cache-Control'] = 'no-cache';
             if($token_required){
-                $request::withHeaders([
-                    'X-First' => 'foo',
-                    'X-Second' => 'bar',
-                    'Cache-Control', 'no-cache'
-                ]);
+                $headers['X-First'] = 'foo';
+                $headers['X-Second'] = 'bar';
             }
+            $request::withHeaders($headers);
             if($method=='GET'){
                 $response = $request::get($url);
             }elseif($method=='POST'){
