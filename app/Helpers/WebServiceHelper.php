@@ -13,16 +13,16 @@ class WebService{
     public static function home_main_slider(){
         return self::request('home/main-slider');
     }
-    public static function section_category($number){
+    public static function home_section_category($number){
         return self::request('home/section-category'.$number);
     }
-    public static function section_grid($number){
+    public static function home_section_grid($number){
         return self::request('home/section-grid'.$number);
     }
-    public static function section_carousel($number){
+    public static function home_section_carousel($number){
         return self::request('home/section-carousel'.$number);
     }
-    public static function favorite_brands(){
+    public static function home_favorite_brands(){
         return self::request('home/favorite-brands');
     }
     private static function request($endpoint, $data=[], $method='GET', $token_required=false){
