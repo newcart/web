@@ -1,7 +1,7 @@
 <?php
 use Illuminate\Support\Facades\Http;
 class WebService{
-    const WEBSERVICE_SERVER = 'https://newcart.akilliphone.com/webservice/';
+    const WEBSERVICE_SERVER = 'https://json.akilliphone.com/';
     protected $userName = '';
     protected $userPassword = '';
     public static function auth_login(){
