@@ -4,7 +4,7 @@
             <div class="navbar-top">
                 <div class="brand-logo">
                     <a class="navbar-brand">
-                        <a href="#"><img src="{{ url('assets/images/logo.svg') }}" alt="Akıllıphone logo"></a>
+                        <a href="/"><img src="{{ url('assets/images/logo.svg') }}" alt="Akıllıphone logo"></a>
                     </a>
                 </div>
                 <div class="mobile-menu">
