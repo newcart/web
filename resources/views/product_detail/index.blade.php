@@ -427,7 +427,7 @@
         $('.color-btn').on('click', function(){
 
             var settings = {
-                "url": "{{ url('/') }}/" + $(this).data('id') + "/",
+                "url": "https://json.akilliphone.com/product/" + $(this).data('id') + "/",
                 'cache': false,
                 "async": true,
                 "crossDomain": true,
@@ -439,7 +439,7 @@
 
             $.ajax(settings).done(function (response) {
                 app.product = response.data;
-                window.history.pushState("nextState", response.data.name, 'https://ex.akilliphone.com/' + response.data.url);
+                window.history.pushState("nextState", response.data.name, '{{ url('/') }}/' + response.data.url);
             });
         });
 
