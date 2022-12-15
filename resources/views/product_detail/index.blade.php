@@ -77,7 +77,6 @@
                         </div>
                         <div class="detail-title-area">
                             <h1 class="product-title"><span>Baseus</span> <span v-text="product.name"></span></h1>
-
                                 <img width="93" height="42" src="{{ url('assets/images/baseus.svg') }}" alt="">
                         </div>
                         <div class="rating-area">
@@ -89,8 +88,8 @@
                         </div>
                         <div class="product-price-area align-items-baseline">
                             <div class="product-price-area-top ">
-                                <div class="product-price ">19.90 <span>TL</span></div>
-                                <div class="product-oldprice ">29.90 <span>TL </span></div>
+                                <div class="product-price "><span v-text="product.newPrice"></span> <span v-text="product.currency"></span></div>
+                                <div class="product-oldprice"><span v-text="product.oldPrice"></span><span v-text="product.currency"></span></div>
                             </div>
                             <div class="mobil-taksit-info"><span>290,03 TL x 9 ay’a varan Taksit seçenekleri</span></div>
                             <div class="product-color-btn">
@@ -414,6 +413,10 @@
         })();
     </script>
     <script>
+        lazyload();
+    </script>
+    <script>
+        
         var product = <?php echo json_encode($product, JSON_UNESCAPED_UNICODE)?>;
         const { createApp } = Vue;
         var app = createApp({
