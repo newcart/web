@@ -427,7 +427,7 @@
         $('.color-btn').on('click', function(){
 
             var settings = {
-                "url": "{{ url('/') }}" + $(this).data('id') + "/",
+                "url": "{{ url('/') }}/" + $(this).data('id') + "/",
                 'cache': false,
                 "async": true,
                 "crossDomain": true,
