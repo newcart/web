@@ -17,7 +17,7 @@
                 <div class="countdown-product">
                     <div class="image">
                         <img class="lazyload fluid-img" width="160" height="160"
-                             src="assets/images/product-images/6.png" alt="Gerisayım">
+                             src="{{ url('assets/images/product-images/6.png') }}" alt="Gerisayım">
                     </div>
                     <div class="name">ALLY Magnetic Air VentMıknatıslı Araç Tutucu Kablo Klipsli-SİYAH</div>
                     <div class="prices">
@@ -52,7 +52,7 @@
                 <div class="countdown-product">
                     <div class="image">
                         <img class="lazyload fluid-img" width="160" height="160"
-                             src="assets/images/product-images/6.png" alt="Gerisayım">
+                             src="{{ url('assets/images/product-images/6.png') }}" alt="Gerisayım">
                     </div>
                     <div class="name">ALLY Magnetic Air VentMıknatıslı Araç Tutucu Kablo Klipsli-SİYAH</div>
                     <div class="prices">
@@ -87,7 +87,7 @@
                 <div class="countdown-product">
                     <div class="image">
                         <img class="lazyload fluid-img" width="160" height="160"
-                             src="assets/images/product-images/6.png" alt="Gerisayım">
+                             src="{{ url('assets/images/product-images/6.png') }}" alt="Gerisayım">
                     </div>
                     <div class="name">ALLY Magnetic Air VentMıknatıslı Araç Tutucu Kablo Klipsli-SİYAH</div>
                     <div class="prices">
@@ -122,7 +122,7 @@
                 <div class="countdown-product">
                     <div class="image">
                         <img class="lazyload fluid-img" width="160" height="160"
-                             src="assets/images/product-images/6.png" alt="Gerisayım">
+                             src="{{ url('assets/images/product-images/6.png') }}" alt="Gerisayım">
                     </div>
                     <div class="name">ALLY Magnetic Air VentMıknatıslı Araç Tutucu Kablo Klipsli-SİYAH</div>
                     <div class="prices">
@@ -157,7 +157,7 @@
                 <div class="countdown-product">
                     <div class="image">
                         <img class="lazyload fluid-img" width="160" height="160"
-                             src="assets/images/product-images/6.png" alt="Gerisayım">
+                             src="{{ url('assets/images/product-images/6.png') }}" alt="Gerisayım">
                     </div>
                     <div class="name">ALLY Magnetic Air VentMıknatıslı Araç Tutucu Kablo Klipsli-SİYAH</div>
                     <div class="prices">
@@ -192,7 +192,7 @@
                 <div class="countdown-product">
                     <div class="image">
                         <img class="lazyload fluid-img" width="160" height="160"
-                             src="assets/images/product-images/6.png" alt="Gerisayım">
+                             src="{{ url('assets/images/product-images/6.png') }}" alt="Gerisayım">
                     </div>
                     <div class="name">ALLY Magnetic Air VentMıknatıslı Araç Tutucu Kablo Klipsli-SİYAH</div>
                     <div class="prices">
@@ -227,7 +227,7 @@
                 <div class="countdown-product">
                     <div class="image">
                         <img class="lazyload fluid-img" width="160" height="160"
-                             src="assets/images/product-images/6.png" alt="Gerisayım">
+                             src="{{ url('assets/images/product-images/6.png') }}" alt="Gerisayım">
                     </div>
                     <div class="name">ALLY Magnetic Air VentMıknatıslı Araç Tutucu Kablo Klipsli-SİYAH</div>
                     <div class="prices">
@@ -262,7 +262,7 @@
                 <div class="countdown-product">
                     <div class="image">
                         <img class="lazyload fluid-img" width="160" height="160"
-                             src="assets/images/product-images/6.png" alt="Gerisayım">
+                             src="{{ url('assets/images/product-images/6.png') }}" alt="Gerisayım">
                     </div>
                     <div class="name">ALLY Magnetic Air VentMıknatıslı Araç Tutucu Kablo Klipsli-SİYAH</div>
                     <div class="prices">
@@ -297,7 +297,7 @@
                 <div class="countdown-product">
                     <div class="image">
                         <img class="lazyload fluid-img" width="160" height="160"
-                             src="assets/images/product-images/6.png" alt="Gerisayım">
+                             src="{{ url('assets/images/product-images/6.png') }}" alt="Gerisayım">
                     </div>
                     <div class="name">ALLY Magnetic Air VentMıknatıslı Araç Tutucu Kablo Klipsli-SİYAH</div>
                     <div class="prices">
@@ -332,7 +332,7 @@
                 <div class="countdown-product">
                     <div class="image">
                         <img class="lazyload fluid-img" width="160" height="160"
-                             src="assets/images/product-images/6.png" alt="Gerisayım">
+                             src="{{ url('assets/images/product-images/6.png') }}" alt="Gerisayım">
                     </div>
                     <div class="name">ALLY Magnetic Air VentMıknatıslı Araç Tutucu Kablo Klipsli-SİYAH</div>
                     <div class="prices">
@@ -367,7 +367,7 @@
                 <div class="countdown-product">
                     <div class="image">
                         <img class="lazyload fluid-img" width="160" height="160"
-                             src="assets/images/product-images/6.png" alt="Gerisayım">
+                             src="{{ url('assets/images/product-images/6.png') }}" alt="Gerisayım">
                     </div>
                     <div class="name">ALLY Magnetic Air VentMıknatıslı Araç Tutucu Kablo Klipsli-SİYAH</div>
                     <div class="prices">
@@ -402,7 +402,7 @@
                 <div class="countdown-product">
                     <div class="image">
                         <img class="lazyload fluid-img" width="160" height="160"
-                             src="assets/images/product-images/6.png" alt="Gerisayım">
+                             src="{{ url('assets/images/product-images/6.png') }}" alt="Gerisayım">
                     </div>
                     <div class="name">ALLY Magnetic Air VentMıknatıslı Araç Tutucu Kablo Klipsli-SİYAH</div>
                     <div class="prices">

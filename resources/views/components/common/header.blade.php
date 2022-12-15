@@ -4,15 +4,15 @@
             <div class="navbar-top">
                 <div class="brand-logo">
                     <a class="navbar-brand">
-                        <a href="#"><img src="assets/images/logo.svg" alt="Akıllıphone logo"></a>
+                        <a href="#"><img src="{{ url('assets/images/logo.svg') }}" alt="Akıllıphone logo"></a>
                     </a>
                 </div>
                 <div class="mobile-menu">
                     <a href="#">
-                        <img src="assets/images/icon.svg">
+                        <img src="{{ url('assets/images/icon.svg') }}">
                     </a>
                     <a href="#">
-                        <img src="assets/images/notification.svg">
+                        <img src="{{ url('assets/images/notification.svg') }}">
                     </a>
                     <div class="user-info">
                         <a href=""><span>MT</span></a>
@@ -39,7 +39,7 @@
                     <div class="product-list">
                         <a href="#">
                             <div class="product-reviewed">
-                                <img src="assets/images/reviewed-item-1.png" alt="">
+                                <img src="{{ url('assets/images/reviewed-item-1.png') }}" alt="">
                                 <div class="reviewed-info">
                                     <div class="reviewed-name">ALLY Magnetic Air Vent Mıknatıslı Araç TutucuKablo Klipsli-SİYAH</div>
                                     <div class="reviewed-price">999,90<span>&nbsp;TL</span></div>
@@ -48,7 +48,7 @@
                         </a>
                         <a href="#">
                             <div class="product-reviewed">
-                                <img src="assets/images/reviewed-item-2.png" alt="">
+                                <img src="{{ url('assets/images/reviewed-item-2.png') }}" alt="">
                                 <div class="reviewed-info">
                                     <div class="reviewed-name">Xiaomi Mi Band 5 Metal Kayış Kordon Kopçalı Milano Loop-SİYAH</div>
                                     <div class="reviewed-price">299,90<span>&nbsp;TL</span></div>
@@ -57,7 +57,7 @@
                         </a>
                         <a href="#">
                             <div class="product-reviewed">
-                                <img src="assets/images/reviewed-item-3.png" alt="">
+                                <img src="{{ url('assets/images/reviewed-item-3.png') }}" alt="">
                                 <div class="reviewed-info">
                                     <div class="reviewed-name">ALLY 230 Bluetooth 5.0 Kulaklık Kulak Üstü Bluetooth</div>
                                     <div class="reviewed-price">99,90<span>&nbsp;TL</span></div>
@@ -103,7 +103,7 @@
             </a>
             <div class="search-bar">
                 <input class="search-input" type="search" placeholder="Ürün, kategori veya ürün kodu bilgisi girin" />
-                <a href="#" class="search-icon"><img width="49" height="49" src="assets/images/search-icon.svg" alt=""></a>
+                <a href="#" class="search-icon"><img width="49" height="49" src="{{ url('assets/images/search-icon.svg') }}" alt=""></a>
                 <div class="search-results">
                     <ul>
                         <li><a href="#">Test Link: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
@@ -115,12 +115,12 @@
             </div>
             <div class="right-section">
                 <a href="#" class="favorites">
-                    <img width="28" height="25" src="assets/images/favorite.svg" alt="">
+                    <img width="28" height="25" src="{{ url('assets/images/favorite.svg') }}" alt="">
                     <span class="counter">1
             </span>
                 </a>
                 <a href="#" class="shopping-cart">
-                    <img width="26" height="25" src="assets/images/shopping-icon.svg" alt="">
+                    <img width="26" height="25" src="{{ url('assets/images/shopping-icon.svg') }}" alt="">
                     <span class="counter">1
             </span>
                 </a>

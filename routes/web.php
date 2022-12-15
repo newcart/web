@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ListingController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\WebServiceController;
+use App\Http\Controllers\ProductDetailController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -36,3 +37,5 @@ Route::get('/urunler/indirime-girenler', [ListingController::class, 'discounted'
 Route::get('/urunler/yeniden-stokta', [ListingController::class, 're_stock'])->name('listing.re_stock');
 Route::get('/urunler/sezon-sonu', [ListingController::class, 'outlet'])->name('listing.outlet');
 Route::get('/urunler/bitmek-uzere', [ListingController::class, 'out_stock'])->name('listing.out_stock');
+
+Route::get('/urun/{slug}', [ProductDetailController::class, 'index'])->name('product_detail.index');

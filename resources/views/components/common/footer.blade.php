@@ -2,7 +2,7 @@
     <div class="container">
         <div class="footer-top">
             <div class="logo">
-                <img src="assets/images/logo.svg" alt="Akıllıphone Logo">
+                <img src="{{ url('assets/images/logo.svg') }}" alt="Akıllıphone Logo">
             </div>
             <div class="bulletin">
                 <div class="bulletin-left">
@@ -72,32 +72,32 @@
                     <ul class="links">
                         <li>
                             <a href="#">
-                                <img src="assets/images/facebook.svg" alt="facebook">
+                                <img src="{{ url('assets/images/facebook.svg') }}" alt="facebook">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="assets/images/twitter.svg" alt="twitter">
+                                <img src="{{ url('assets/images/twitter.svg') }}" alt="twitter">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="assets/images/google.svg" alt="google">
+                                <img src="{{ url('assets/images/google.svg') }}" alt="google">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="assets/images/pinterest.svg" alt="pinterest">
+                                <img src="{{ url('assets/images/pinterest.svg') }}" alt="pinterest">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="assets/images/instagram.svg" alt="instagram">
+                                <img src="{{ url('assets/images/instagram.svg') }}" alt="instagram">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="assets/images/youtube.svg" alt="youtube">
+                                <img src="{{ url('assets/images/youtube.svg') }}" alt="youtube">
                             </a>
                         </li>
                     </ul>
@@ -120,19 +120,19 @@
         </div>
         <div class="footer-bottom">
             <div class="left">
-                <img class="lazyload" data-src="assets/images/norton.svg">
+                <img class="lazyload" data-src="{{ url('assets/images/norton.svg') }}">
             </div>
             <div class="right">
-                <img class="lazyload" data-src="assets/images/isbankasi.svg">
-                <img class="lazyload" data-src="assets/images/denizbank.svg">
-                <img class="lazyload" data-src="assets/images/ziraat.svg">
-                <img class="lazyload" data-src="assets/images/bonus.svg">
-                <img class="lazyload" data-src="assets/images/maximum.svg">
-                <img class="lazyload" data-src="assets/images/axess.svg">
-                <img class="lazyload" data-src="assets/images/yapikredi.svg">
-                <img class="lazyload" data-src="assets/images/paraf.svg">
-                <img class="lazyload" data-src="assets/images/garanti.svg">
-                <img class="lazyload" data-src="assets/images/akbank.svg">
+                <img class="lazyload" data-src="{{ url('assets/images/isbankasi.svg') }}">
+                <img class="lazyload" data-src="{{ url('assets/images/denizbank.svg') }}">
+                <img class="lazyload" data-src="{{ url('assets/images/ziraat.svg') }}">
+                <img class="lazyload" data-src="{{ url('assets/images/bonus.svg') }}">
+                <img class="lazyload" data-src="{{ url('assets/images/maximum.svg') }}">
+                <img class="lazyload" data-src="{{ url('assets/images/axess.svg') }}">
+                <img class="lazyload" data-src="{{ url('assets/images/yapikredi.svg') }}">
+                <img class="lazyload" data-src="{{ url('assets/images/paraf.svg') }}">
+                <img class="lazyload" data-src="{{ url('assets/images/garanti.svg') }}">
+                <img class="lazyload" data-src="{{ url('assets/images/akbank.svg') }}">
             </div>
         </div>
         <div class="copyright">
@@ -147,32 +147,32 @@
             <ul class="links">
                 <li>
                     <a href="#">
-                        <img src="assets/images/facebook.svg" alt="facebook">
+                        <img src="{{ url('assets/images/facebook.svg') }}" alt="facebook">
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="assets/images/twitter.svg" alt="twitter">
+                        <img src="{{ url('assets/images/twitter.svg') }}" alt="twitter">
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="assets/images/google.svg" alt="google">
+                        <img src="{{ url('assets/images/google.svg') }}" alt="google">
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="assets/images/pinterest.svg" alt="pinterest">
+                        <img src="{{ url('assets/images/pinterest.svg') }}" alt="pinterest">
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="assets/images/instagram.svg" alt="instagram">
+                        <img src="{{ url('assets/images/instagram.svg') }}" alt="instagram">
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="assets/images/youtube.svg" alt="youtube">
+                        <img src="{{ url('assets/images/youtube.svg') }}" alt="youtube">
                     </a>
                 </li>
             </ul>
@@ -189,7 +189,7 @@
                 <div class="footer-category">
                     <div class="category-title">
                         Kurumsal
-                        <img class="arrow-down" src="assets/images/right-arrow.svg">
+                        <img class="arrow-down" src="{{ url('assets/images/right-arrow.svg') }}">
                     </div>
                     <ul>
                         <li><a href="#">Hakkımızda</a></li>
@@ -211,7 +211,7 @@
                 <div class="footer-category">
                     <div class="category-title">
                         Kategoriler
-                        <img class="arrow-down" src="assets/images/right-arrow.svg">
+                        <img class="arrow-down" src="{{ url('assets/images/right-arrow.svg') }}">
                     </div>
                     <ul>
                         <li><a href="#">Aksesuarlar</a></li>
@@ -229,7 +229,7 @@
                 <div class="footer-category">
                     <div class="category-title">
                         Ödeme
-                        <img class="arrow-down" src="assets/images/right-arrow.svg">
+                        <img class="arrow-down" src="{{ url('assets/images/right-arrow.svg') }}">
                     </div>
                     <ul>
                         <li><a href="#">Ödeme Seçenekleri</a></li>
@@ -241,7 +241,7 @@
                 <div class="footer-category">
                     <div class="category-title">
                         Özel Sayfalar
-                        <img class="arrow-down" src="assets/images/right-arrow.svg">
+                        <img class="arrow-down" src="{{ url('assets/images/right-arrow.svg') }}">
                     </div>
                     <ul>
                         <li><a href="#">Apple</a></li>
@@ -259,8 +259,8 @@
 </footer>    <!-- Bütün scriptler -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
-<script src="assets/js/app.js"></script>
-<script src="assets/js/owl.carousel.min.js"></script>
+<script src="{{ url('assets/js/app.js') }}?_v={{ env('ASSETS_VER') }}"></script>
+<script src="{{ url('assets/js/owl.carousel.min.js') }}?_v={{ env('ASSETS_VER') }}"></script>
 <script>
     $(document).ready(function () {
         let owl = $(".home-slider").owlCarousel({

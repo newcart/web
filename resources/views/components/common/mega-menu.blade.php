@@ -16,7 +16,7 @@
                                             <div class="product-category">Araç Aksesuarları</div>
                                             <div class="product-details">
                                                 <div class="product-image">
-                                                    <img class="lazyload" width="82" height="82" src="assets/images/product1.png" alt="">
+                                                    <img class="lazyload" width="82" height="82" src="{{ url('assets/images/product1.png') }}" alt="">
                                                 </div>
                                                 <div class="product-info">
                                                     <div class="product-name">Bs22 Ritim Sport Bluetooth Speaker</div>
@@ -36,7 +36,7 @@
                                             <div class="product-category">Bluetooth Hoparlör</div>
                                             <div class="product-details">
                                                 <div class="product-image">
-                                                    <img class="lazyload" width="82" height="82" src="assets/images/product2.png" alt="">
+                                                    <img class="lazyload" width="82" height="82" src="{{ url('assets/images/product2.png') }}" alt="">
                                                 </div>
                                                 <div class="product-info">
                                                     <div class="product-name">Bs22 Ritim Sport Bluetooth Speaker</div>
@@ -56,7 +56,7 @@
                                             <div class="product-category">Ekran Koruyucular</div>
                                             <div class="product-details">
                                                 <div class="product-image">
-                                                    <img class="lazyload" width="82" height="82" src="assets/images/product3.png" alt="">
+                                                    <img class="lazyload" width="82" height="82" src="{{ url('assets/images/product3.png') }}" alt="">
                                                 </div>
                                                 <div class="product-info">
                                                     <div class="product-name">Bs22 Ritim Sport Bluetooth Speaker</div>
@@ -76,7 +76,7 @@
                                             <div class="product-category">Oyun Aksesuarları</div>
                                             <div class="product-details">
                                                 <div class="product-image">
-                                                    <img class="lazyload" width="82" height="82" src="assets/images/product4.png" alt="">
+                                                    <img class="lazyload" width="82" height="82" src="{{ url('assets/images/product4.png') }}" alt="">
                                                 </div>
                                                 <div class="product-info">
                                                     <div class="product-name">Bs22 Ritim Sport Bluetooth Speaker</div>
@@ -96,7 +96,7 @@
                                             <div class="product-category">Telefon Kılıfları</div>
                                             <div class="product-details">
                                                 <div class="product-image">
-                                                    <img class="lazyload" width="82" height="82" src="assets/images/product5.png" alt="">
+                                                    <img class="lazyload" width="82" height="82" src="{{ url('assets/images/product5.png') }}" alt="">
                                                 </div>
                                                 <div class="product-info">
                                                     <div class="product-name">Bs22 Ritim Sport Bluetooth Speaker</div>
@@ -116,7 +116,7 @@
                                             <div class="product-category">Selfie ve Standlar</div>
                                             <div class="product-details">
                                                 <div class="product-image">
-                                                    <img class="lazyload" width="82" height="82" src="assets/images/product6.png" alt="">
+                                                    <img class="lazyload" width="82" height="82" src="{{ url('assets/images/product6.png') }}" alt="">
                                                 </div>
                                                 <div class="product-info">
                                                     <div class="product-name">Bs22 Ritim Sport Bluetooth Speaker</div>
@@ -142,31 +142,31 @@
                             <div class="sub-div">
                                 <div class="item">
                                     <a href="#">
-                                        <img width="75" height="75" src="assets/images/megamenu-icon1.svg" alt="">
+                                        <img width="75" height="75" src="{{ url('assets/images/megamenu-icon1.svg') }}" alt="">
                                         <span>Araç Tutucular</span>
                                     </a>
                                 </div>
                                 <div class="item">
                                     <a href="#">
-                                        <img width="75" height="75" src="assets/images/megamenu-icon2.svg" alt="">
+                                        <img width="75" height="75" src="{{ url('assets/images/megamenu-icon2.svg') }}" alt="">
                                         <span>Araç Bakım Ürünleri</span>
                                     </a>
                                 </div>
                                 <div class="item">
                                     <a href="#">
-                                        <img width="75" height="75" src="assets/images/megamenu-icon3.svg" alt="">
+                                        <img width="75" height="75" src="{{ url('assets/images/megamenu-icon3.svg') }}" alt="">
                                         <span>Aydınlatma</span>
                                     </a>
                                 </div>
                                 <div class="item">
                                     <a href="#">
-                                        <img width="75" height="75" src="assets/images/megamenu-icon4.svg" alt="">
+                                        <img width="75" height="75" src="{{ url('assets/images/megamenu-icon4.svg') }}" alt="">
                                         <span>Akıllı Araç Ürünleri</span>
                                     </a>
                                 </div>
                                 <div class="item">
                                     <a href="#">
-                                        <img width="75" height="75" src="assets/images/megamenu-icon5.svg" alt="">
+                                        <img width="75" height="75" src="{{ url('assets/images/megamenu-icon5.svg') }}" alt="">
                                         <span>Ses & Multimedya</span>
                                     </a>
                                 </div>
@@ -180,31 +180,31 @@
                             <div class="sub-div">
                                 <div class="item">
                                     <a href="#">
-                                        <img width="75" height="75" src="assets/images/megamenu-icon1.svg" alt="">
+                                        <img width="75" height="75" src="{{ url('assets/images/megamenu-icon1.svg') }}" alt="">
                                         <span>Araç Tutucular</span>
                                     </a>
                                 </div>
                                 <div class="item">
                                     <a href="#">
-                                        <img width="75" height="75" src="assets/images/megamenu-icon2.svg" alt="">
+                                        <img width="75" height="75" src="{{ url('assets/images/megamenu-icon2.svg') }}" alt="">
                                         <span>Araç Bakım Ürünleri</span>
                                     </a>
                                 </div>
                                 <div class="item">
                                     <a href="#">
-                                        <img width="75" height="75" src="assets/images/megamenu-icon3.svg" alt="">
+                                        <img width="75" height="75" src="{{ url('assets/images/megamenu-icon3.svg') }}" alt="">
                                         <span>Aydınlatma</span>
                                     </a>
                                 </div>
                                 <div class="item">
                                     <a href="#">
-                                        <img width="75" height="75" src="assets/images/megamenu-icon4.svg" alt="">
+                                        <img width="75" height="75" src="{{ url('assets/images/megamenu-icon4.svg') }}" alt="">
                                         <span>Akıllı Araç Ürünleri</span>
                                     </a>
                                 </div>
                                 <div class="item">
                                     <a href="#">
-                                        <img width="75" height="75" src="assets/images/megamenu-icon5.svg" alt="">
+                                        <img width="75" height="75" src="{{ url('assets/images/megamenu-icon5.svg') }}" alt="">
                                         <span>Ses & Multimedya</span>
                                     </a>
                                 </div>
@@ -224,31 +224,31 @@
                             <div class="sub-div">
                                 <div class="item">
                                     <a href="#">
-                                        <img width="75" height="75" src="assets/images/megamenu-icon1.svg" alt="">
+                                        <img width="75" height="75" src="{{ url('assets/images/megamenu-icon1.svg') }}" alt="">
                                         <span>Araç Tutucular</span>
                                     </a>
                                 </div>
                                 <div class="item">
                                     <a href="#">
-                                        <img width="75" height="75" src="assets/images/megamenu-icon2.svg" alt="">
+                                        <img width="75" height="75" src="{{ url('assets/images/megamenu-icon2.svg') }}" alt="">
                                         <span>Araç Bakım Ürünleri</span>
                                     </a>
                                 </div>
                                 <div class="item">
                                     <a href="#">
-                                        <img width="75" height="75" src="assets/images/megamenu-icon3.svg" alt="">
+                                        <img width="75" height="75" src="{{ url('assets/images/megamenu-icon3.svg') }}" alt="">
                                         <span>Aydınlatma</span>
                                     </a>
                                 </div>
                                 <div class="item">
                                     <a href="#">
-                                        <img width="75" height="75" src="assets/images/megamenu-icon4.svg" alt="">
+                                        <img width="75" height="75" src="{{ url('assets/images/megamenu-icon4.svg') }}" alt="">
                                         <span>Akıllı Araç Ürünleri</span>
                                     </a>
                                 </div>
                                 <div class="item">
                                     <a href="#">
-                                        <img width="75" height="75" src="assets/images/megamenu-icon5.svg" alt="">
+                                        <img width="75" height="75" src="{{ url('assets/images/megamenu-icon5.svg') }}" alt="">
                                         <span>Ses & Multimedya</span>
                                     </a>
                                 </div>
@@ -293,7 +293,7 @@
                                             <div class="product-category">Araç Aksesuarları</div>
                                             <div class="product-details">
                                                 <div class="product-image">
-                                                    <img class="lazyload" width="82" height="82" src="assets/images/product1.png" alt="">
+                                                    <img class="lazyload" width="82" height="82" src="{{ url('assets/images/product1.png') }}" alt="">
                                                 </div>
                                                 <div class="product-info">
                                                     <div class="product-name">Bs22 Ritim Sport Bluetooth Speaker</div>
@@ -313,7 +313,7 @@
                                             <div class="product-category">Bluetooth Hoparlör</div>
                                             <div class="product-details">
                                                 <div class="product-image">
-                                                    <img class="lazyload" width="82" height="82" src="assets/images/product2.png" alt="">
+                                                    <img class="lazyload" width="82" height="82" src="{{ url('assets/images/product2.png') }}" alt="">
                                                 </div>
                                                 <div class="product-info">
                                                     <div class="product-name">Bs22 Ritim Sport Bluetooth Speaker</div>
@@ -333,7 +333,7 @@
                                             <div class="product-category">Ekran Koruyucular</div>
                                             <div class="product-details">
                                                 <div class="product-image">
-                                                    <img class="lazyload" width="82" height="82" src="assets/images/product3.png" alt="">
+                                                    <img class="lazyload" width="82" height="82" src="{{ url('assets/images/product3.png') }}" alt="">
                                                 </div>
                                                 <div class="product-info">
                                                     <div class="product-name">Bs22 Ritim Sport Bluetooth Speaker</div>
@@ -353,7 +353,7 @@
                                             <div class="product-category">Oyun Aksesuarları</div>
                                             <div class="product-details">
                                                 <div class="product-image">
-                                                    <img class="lazyload" width="82" height="82" src="assets/images/product4.png" alt="">
+                                                    <img class="lazyload" width="82" height="82" src="{{ url('assets/images/product4.png') }}" alt="">
                                                 </div>
                                                 <div class="product-info">
                                                     <div class="product-name">Bs22 Ritim Sport Bluetooth Speaker</div>
@@ -373,7 +373,7 @@
                                             <div class="product-category">Telefon Kılıfları</div>
                                             <div class="product-details">
                                                 <div class="product-image">
-                                                    <img class="lazyload" width="82" height="82" src="assets/images/product5.png" alt="">
+                                                    <img class="lazyload" width="82" height="82" src="{{ url('assets/images/product5.png') }}" alt="">
                                                 </div>
                                                 <div class="product-info">
                                                     <div class="product-name">Bs22 Ritim Sport Bluetooth Speaker</div>
@@ -393,7 +393,7 @@
                                             <div class="product-category">Selfie ve Standlar</div>
                                             <div class="product-details">
                                                 <div class="product-image">
-                                                    <img class="lazyload" width="82" height="82" src="assets/images/product6.png" alt="">
+                                                    <img class="lazyload" width="82" height="82" src="{{ url('assets/images/product6.png') }}" alt="">
                                                 </div>
                                                 <div class="product-info">
                                                     <div class="product-name">Bs22 Ritim Sport Bluetooth Speaker</div>
@@ -419,31 +419,31 @@
                             <div class="sub-div">
                                 <div class="item">
                                     <a href="#">
-                                        <img width="75" height="75" src="assets/images/megamenu-icon1.svg" alt="">
+                                        <img width="75" height="75" src="{{ url('assets/images/megamenu-icon1.svg') }}" alt="">
                                         <span>Araç Tutucular</span>
                                     </a>
                                 </div>
                                 <div class="item">
                                     <a href="#">
-                                        <img width="75" height="75" src="assets/images/megamenu-icon2.svg" alt="">
+                                        <img width="75" height="75" src="{{ url('assets/images/megamenu-icon2.svg') }}" alt="">
                                         <span>Araç Bakım Ürünleri</span>
                                     </a>
                                 </div>
                                 <div class="item">
                                     <a href="#">
-                                        <img width="75" height="75" src="assets/images/megamenu-icon3.svg" alt="">
+                                        <img width="75" height="75" src="{{ url('assets/images/megamenu-icon3.svg') }}" alt="">
                                         <span>Aydınlatma</span>
                                     </a>
                                 </div>
                                 <div class="item">
                                     <a href="#">
-                                        <img width="75" height="75" src="assets/images/megamenu-icon4.svg" alt="">
+                                        <img width="75" height="75" src="{{ url('assets/images/megamenu-icon4.svg') }}" alt="">
                                         <span>Akıllı Araç Ürünleri</span>
                                     </a>
                                 </div>
                                 <div class="item">
                                     <a href="#">
-                                        <img width="75" height="75" src="assets/images/megamenu-icon5.svg" alt="">
+                                        <img width="75" height="75" src="{{ url('assets/images/megamenu-icon5.svg') }}" alt="">
                                         <span>Ses & Multimedya</span>
                                     </a>
                                 </div>
@@ -457,31 +457,31 @@
                             <div class="sub-div">
                                 <div class="item">
                                     <a href="#">
-                                        <img width="75" height="75" src="assets/images/megamenu-icon1.svg" alt="">
+                                        <img width="75" height="75" src="{{ url('assets/images/megamenu-icon1.svg') }}" alt="">
                                         <span>Araç Tutucular</span>
                                     </a>
                                 </div>
                                 <div class="item">
                                     <a href="#">
-                                        <img width="75" height="75" src="assets/images/megamenu-icon2.svg" alt="">
+                                        <img width="75" height="75" src="{{ url('assets/images/megamenu-icon2.svg') }}" alt="">
                                         <span>Araç Bakım Ürünleri</span>
                                     </a>
                                 </div>
                                 <div class="item">
                                     <a href="#">
-                                        <img width="75" height="75" src="assets/images/megamenu-icon3.svg" alt="">
+                                        <img width="75" height="75" src="{{ url('assets/images/megamenu-icon3.svg') }}" alt="">
                                         <span>Aydınlatma</span>
                                     </a>
                                 </div>
                                 <div class="item">
                                     <a href="#">
-                                        <img width="75" height="75" src="assets/images/megamenu-icon4.svg" alt="">
+                                        <img width="75" height="75" src="{{ url('assets/images/megamenu-icon4.svg') }}" alt="">
                                         <span>Akıllı Araç Ürünleri</span>
                                     </a>
                                 </div>
                                 <div class="item">
                                     <a href="#">
-                                        <img width="75" height="75" src="assets/images/megamenu-icon5.svg" alt="">
+                                        <img width="75" height="75" src="{{ url('assets/images/megamenu-icon5.svg') }}" alt="">
                                         <span>Ses & Multimedya</span>
                                     </a>
                                 </div>
@@ -501,31 +501,31 @@
                             <div class="sub-div">
                                 <div class="item">
                                     <a href="#">
-                                        <img width="75" height="75" src="assets/images/megamenu-icon1.svg" alt="">
+                                        <img width="75" height="75" src="{{ url('assets/images/megamenu-icon1.svg') }}" alt="">
                                         <span>Araç Tutucular</span>
                                     </a>
                                 </div>
                                 <div class="item">
                                     <a href="#">
-                                        <img width="75" height="75" src="assets/images/megamenu-icon2.svg" alt="">
+                                        <img width="75" height="75" src="{{ url('assets/images/megamenu-icon2.svg') }}" alt="">
                                         <span>Araç Bakım Ürünleri</span>
                                     </a>
                                 </div>
                                 <div class="item">
                                     <a href="#">
-                                        <img width="75" height="75" src="assets/images/megamenu-icon3.svg" alt="">
+                                        <img width="75" height="75" src="{{ url('assets/images/megamenu-icon3.svg') }}" alt="">
                                         <span>Aydınlatma</span>
                                     </a>
                                 </div>
                                 <div class="item">
                                     <a href="#">
-                                        <img width="75" height="75" src="assets/images/megamenu-icon4.svg" alt="">
+                                        <img width="75" height="75" src="{{ url('assets/images/megamenu-icon4.svg') }}" alt="">
                                         <span>Akıllı Araç Ürünleri</span>
                                     </a>
                                 </div>
                                 <div class="item">
                                     <a href="#">
-                                        <img width="75" height="75" src="assets/images/megamenu-icon5.svg" alt="">
+                                        <img width="75" height="75" src="{{ url('assets/images/megamenu-icon5.svg') }}" alt="">
                                         <span>Ses & Multimedya</span>
                                     </a>
                                 </div>

@@ -1,7 +1,7 @@
 @extends('layouts.default')
 @section('head')
     <title>Dropshipping - AkıllıPhone</title>
-    <link rel="stylesheet" href="assets/css/dropshipping.css">
+    <link rel="stylesheet" href="{{ url('assets/css/dropshipping.css') }}">
 @endsection
 @section('content')
 
@@ -18,8 +18,8 @@
             </div>
         </div>
         <div class="join-us">
-            <a href=""><img class="img-fluid" src="assets/images/bayimiz.svg" alt="Güvenli Alışveriş"></a>
-            <a href=""><img class="img-fluid" src="assets/images/alisveris.svg" alt="Bayimiz Olun"></a>
+            <a href=""><img class="img-fluid" src="{{ url('assets/images/bayimiz.svg') }}" alt="Güvenli Alışveriş"></a>
+            <a href=""><img class="img-fluid" src="{{ url('assets/images/alisveris.svg') }}" alt="Bayimiz Olun"></a>
         </div>
         <div class="body-dropshipping">
             <div class="container">
@@ -29,7 +29,7 @@
                 <h2>Dropshipping</h2>
                 <p>Türkçede stoksuz satış olarak da ifade edilen dropshipping , stok tutmak yerine, gelen siparişleri akilliphone.com ‘a yönlendirerek, ürünleri akilliphone.com ’un deposundan müşteriye ulaşması üzerine kurulu bir iş modelidir. Düşük sermaye ve işletme giderleri gibi avantajları olduğu için özellikle e-ticarete yeni başlayan girişimciler tarafından tercih edilir. Kullanım şekli olarak, stok tutmayan yeni e-ticaret işletmeleri tedarikçileri aracılığı ile bu ürünleri e-ticaret sitelerinde sergiler ve son kullanıcıların satın almalarına olanak sağlarlar. Böylece depo’da stok tutulmayan ürünlerde satışa sunulmuş olur ve gönderimi akilliphone.com ’un deposu üzerinden sağlanır. akilliphone.com kurulduğu ilk günlerde bayilerimizden gelen yoğun talep üzerine bayilerine destek olabilmek için dropshipping hizmetine başlamıştır. Dropshipping sistemini sektörde ilk yapan firmayız.
                 </p>
-                <p><img src="assets/images/sheme.svg" alt="kargo şeması"></p>
+                <p><img src="{{ url('assets/images/sheme.svg') }}" alt="kargo şeması"></p>
                 <p style="font-size:30px;line-height: 41px;" >Yılların tecrübesi ve sisteme yapılan <br>
                     yatırımlar sayesinde sizlere kaliteli hizmet ve <br>
                     <span style="color:var(--brand-color);font-weight:600;" >%100 müşteri memnuniyeti sunmaktayız.</span>

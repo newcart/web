@@ -8,10 +8,10 @@
             <div class="one-card-slider owl-carousel owl-theme">
                 <div class="card-slider">
                     <div class="card-brand"><img class="lazyload" width="100" height="30"
-                                                 data-src="assets/images/card-brand.png" alt="Xiaomi"></div>
+                                                 data-src="{{ url('assets/images/card-brand.png') }}" alt="Xiaomi"></div>
                     <hr class="divider">
                     <div class="card-image"><img class="lazyload" width="128" height="128"
-                                                 data-src="assets/images/card-image.png" alt="Xiaomi"></div>
+                                                 data-src="{{ url('assets/images/card-image.png') }}" alt="Xiaomi"></div>
                     <div class="card-info">
                         <div class="card-name">ALLY MC BH101 Tws Profesyonel Gaming Kulaklık</div>
                         <div class="card-prices">
@@ -27,10 +27,10 @@
                 </div>
                 <div class="card-slider">
                     <div class="card-brand"><img class="lazyload" width="100" height="30"
-                                                 data-src="assets/images/card-brand.png" alt="Xiaomi"></div>
+                                                 data-src="{{ url('assets/images/card-brand.png') }}" alt="Xiaomi"></div>
                     <hr class="divider">
                     <div class="card-image"><img class="lazyload" width="128" height="128"
-                                                 data-src="assets/images/card-image.png" alt="Xiaomi"></div>
+                                                 data-src="{{ url('assets/images/card-image.png') }}" alt="Xiaomi"></div>
                     <div class="card-info">
                         <div class="card-name">ALLY MC BH101 Tws Profesyonel Gaming Kulaklık</div>
                         <div class="card-prices">
@@ -46,10 +46,10 @@
                 </div>
                 <div class="card-slider">
                     <div class="card-brand"><img class="lazyload" width="100" height="30"
-                                                 data-src="assets/images/card-brand.png" alt="Xiaomi"></div>
+                                                 data-src="{{ url('assets/images/card-brand.png') }}" alt="Xiaomi"></div>
                     <hr class="divider">
                     <div class="card-image"><img class="lazyload" width="128" height="128"
-                                                 data-src="assets/images/card-image.png" alt="Xiaomi"></div>
+                                                 data-src="{{ url('assets/images/card-image.png') }}" alt="Xiaomi"></div>
                     <div class="card-info">
                         <div class="card-name">ALLY MC BH101 Tws Profesyonel Gaming Kulaklık</div>
                         <div class="card-prices">
@@ -72,23 +72,23 @@
             </div>
             <div class="brand-slider owl-carousel owl-theme">
                 <a class="brand-logo" href="#"><img class="lazyload fluid-img" width="255" height="89"
-                                                    data-src="assets/images/brands/1.png" alt="Marka logo"></a>
+                                                    data-src="{{ url('assets/images/brands/1.png') }}" alt="Marka logo"></a>
                 <a class="brand-logo" href="#"><img class="lazyload fluid-img" width="255" height="89"
-                                                    data-src="assets/images/brands/2.png" alt="Marka logo"></a>
+                                                    data-src="{{ url('assets/images/brands/2.png') }}" alt="Marka logo"></a>
                 <a class="brand-logo" href="#"><img class="lazyload fluid-img" width="255" height="89"
-                                                    data-src="assets/images/brands/3.png" alt="Marka logo"></a>
+                                                    data-src="{{ url('assets/images/brands/3.png') }}" alt="Marka logo"></a>
                 <a class="brand-logo" href="#"><img class="lazyload fluid-img" width="255" height="89"
-                                                    data-src="assets/images/brands/4.png" alt="Marka logo"></a>
+                                                    data-src="{{ url('assets/images/brands/4.png') }}" alt="Marka logo"></a>
                 <a class="brand-logo" href="#"><img class="lazyload fluid-img" width="255" height="89"
-                                                    data-src="assets/images/brands/5.png" alt="Marka logo"></a>
+                                                    data-src="{{ url('assets/images/brands/5.png') }}" alt="Marka logo"></a>
                 <a class="brand-logo" href="#"><img class="lazyload fluid-img" width="255" height="89"
-                                                    data-src="assets/images/brands/6.png" alt="Marka logo"></a>
+                                                    data-src="{{ url('assets/images/brands/6.png') }}" alt="Marka logo"></a>
                 <a class="brand-logo" href="#"><img class="lazyload fluid-img" width="255" height="89"
-                                                    data-src="assets/images/brands/7.png" alt="Marka logo"></a>
+                                                    data-src="{{ url('assets/images/brands/7.png') }}" alt="Marka logo"></a>
                 <a class="brand-logo" href="#"><img class="lazyload fluid-img" width="255" height="89"
-                                                    data-src="assets/images/brands/8.png" alt="Marka logo"></a>
+                                                    data-src="{{ url('assets/images/brands/8.png') }}" alt="Marka logo"></a>
                 <a class="brand-logo" href="#"><img class="lazyload fluid-img" width="255" height="89"
-                                                    data-src="assets/images/brands/9.png" alt="Marka logo"></a>
+                                                    data-src="{{ url('assets/images/brands/9.png') }}" alt="Marka logo"></a>
             </div>
         </div>
     </div>
