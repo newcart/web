@@ -97,7 +97,7 @@
 <header class="desktop-header">
     <div class="container">
         <div class="navbar">
-            <a href="/" class="brand-logo">
+            <a href="{{ url('/') }}" class="brand-logo">
                 <img width="186" height="52"
                      src="https://www.akilliphone.com/views/kuteshop/assets/images/logo/logo.svg?v=2.7" alt="">
             </a>

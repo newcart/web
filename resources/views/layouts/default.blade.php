@@ -13,10 +13,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css?_v={{ env('ASSETS_VER') }}">
     @yield('head', '')
 </head>
-<body id="app">
+<body>
 <x-common.header/>
 <x-common.mega-menu/>
-@yield('content', '')
+<div id="app">
+    @yield('content', '')
+</div>
 <x-common.footer :page="'home'"/>
 @yield('js', '')
 </body>

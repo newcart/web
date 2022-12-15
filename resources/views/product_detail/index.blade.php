@@ -19,7 +19,7 @@
             <div class="mobile-product-header">
                 <div class="mobile-product-header-inner">
                     <div class="brand">BASEUS</div>
-                    <h1 class="product-title">Baseus Easy Control Havalandırma Araç içi Telefon Tutucu</h1>
+                    <h1 class="product-title">********</h1>
                     <div class="rating-area">
                         <div class="stars">
                             <span><img src="{{ url('assets/images/full-star.svg') }}" alt=""></span>
@@ -76,9 +76,8 @@
                             </ul>
                         </div>
                         <div class="detail-title-area">
-                            <h1 class="product-title"><span>Baseus</span> Easy Control Havalandırma
-                                Araç içi Telefon Tutucu</h1>
-                                </h2>
+                            <h1 class="product-title"><span>Baseus</span> <span v-text="product.name"></span></h1>
+
                                 <img width="93" height="42" src="{{ url('assets/images/baseus.svg') }}" alt="">
                         </div>
                         <div class="rating-area">
@@ -96,10 +95,10 @@
                             <div class="mobil-taksit-info"><span>290,03 TL x 9 ay’a varan Taksit seçenekleri</span></div>
                             <div class="product-color-btn">
                                 <span class="title">Renk:</span>
-                                <div class="color-btn">
+                                <div class="color-btn" data-id="1">
                                     <button style="background:#808080;"></button>
                                 </div>
-                                <div class="color-btn">
+                                <div class="color-btn" data-id="2">
                                     <button style="background:#000000;"></button>
                                 </div>
                                 <div class="color-btn">
@@ -288,9 +287,11 @@
             </div>
         </div>
     </section>
+
+@endsection
+@section('js')
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
     <script>
         var productThumb = new Swiper(".product-detail-thumb", {
             slidesPerView: 3,
@@ -412,7 +413,35 @@
             });
         })();
     </script>
-@endsection
-@section('js')
+    <script>
+        var product = <?php echo json_encode($product, JSON_UNESCAPED_UNICODE)?>;
+        const { createApp } = Vue;
+        var app = createApp({
+            data() {
+                return {
+                    product: product
+                }
+            }
+        }).mount('#app');
 
+        $('.color-btn').on('click', function(){
+
+            var settings = {
+                "url": "https://json.akilliphone.com/product/" + $(this).data('id') + "/",
+                'cache': false,
+                "async": true,
+                "crossDomain": true,
+                "method": "GET",
+                "headers": {
+                    "Access-Control-Allow-Origin":"*"
+                }
+            };
+
+            $.ajax(settings).done(function (response) {
+                app.product = response.data;
+                window.history.pushState("nextState", response.data.name, 'https://ex.akilliphone.com/' + response.data.url);
+            });
+        });
+
+    </script>
 @endsection
