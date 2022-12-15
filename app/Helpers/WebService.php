@@ -13,6 +13,9 @@ class WebService{
     public static function products($filter){
         return self::request('product');
     }
+    public static function product($product_id){
+        return self::request('product/'.$product_id);
+    }
     public static function home_main_slider(){
         return self::request('home/main-slider');
     }
