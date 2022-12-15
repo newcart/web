@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Home;
 use Illuminate\Http\Request;
-    
+
 class HomeController extends Controller
 {
     /**
@@ -14,7 +14,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        
+
         $data['main_slider'] =  \WebService::home_main_slider();
         $data['section_category1'] =  \WebService::home_section_category(1);
         $data['section_grid1'] =  \WebService::home_section_grid(1);
@@ -24,7 +24,7 @@ class HomeController extends Controller
         $data['section_carousel2'] =  \WebService::home_section_carousel(2);
         $data['section_carousel3'] =  \WebService::home_section_carousel(3);
         $data['favorite_brands'] =  \WebService::home_favorite_brands();
-        
+
         $homeModel = new Home();
         $data['section_category'] = $homeModel->get_section_category_data();
         $data['section_image1'] = $homeModel->get_section_image1_data();
