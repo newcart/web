@@ -427,7 +427,7 @@
         $('.color-btn').on('click', function(){
 
             var settings = {
-                "url": "https://json.akilliphone.com/product/" + $(this).data('id') + "/",
+                "url": "{{ url('/') }}" + $(this).data('id') + "/",
                 'cache': false,
                 "async": true,
                 "crossDomain": true,
