@@ -16,7 +16,7 @@
 <body>
 <x-common.header/>
 <x-common.mega-menu/>
-<div id="app">
+<div>
     @yield('content', '')
 </div>
 <x-common.footer :page="'home'"/>

@@ -58,7 +58,7 @@
                         <div class="swiper-pagination d-none"></div>
                     </div>
                 </div>
-                <div class="right">
+                <div id="app" class="right">
                     <div class="product-details-area">
                         <div class="details-top">
                             <ul class="details-top-left">
@@ -115,8 +115,7 @@
                                 </div>
                                 <div class="addtocart"><button>Sepete Ekle</button></div>
                                 <div class="iconcart">
-                                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="16.5"
-                                                     viewBox="0 0 16.5 16.5">
+                                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="16.5"  viewBox="0 0 16.5 16.5">
                                             <path id="noun_Heart_2102871_1_" data-name="noun_Heart_2102871 (1)"
                                                   d="M17.679,6A4.631,4.631,0,0,0,14.25,7.554,4.631,4.631,0,0,0,10.821,6,5.045,5.045,0,0,0,6,11.233c0,4.212,7.478,10.817,7.8,11.1a.688.688,0,0,0,.9.008c.319-.27,7.805-6.664,7.805-11.1A5.045,5.045,0,0,0,17.679,6ZM14.257,20.9c-2.271-2.079-6.882-6.877-6.882-9.663a3.673,3.673,0,0,1,3.446-3.858,3.361,3.361,0,0,1,2.843,1.679.687.687,0,0,0,1.172,0,3.362,3.362,0,0,1,2.843-1.679,3.673,3.673,0,0,1,3.446,3.858C21.125,14.179,16.527,18.876,14.257,20.9Z"
                                                   transform="translate(-6 -6)" fill="#d8d8d8" />
@@ -286,7 +285,6 @@
             </div>
         </div>
     </section>
-
 @endsection
 @section('js')
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
@@ -416,7 +414,7 @@
         lazyload();
     </script>
     <script>
-        
+
         var product = <?php echo json_encode($product, JSON_UNESCAPED_UNICODE)?>;
         const { createApp } = Vue;
         var app = createApp({
