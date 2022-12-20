@@ -13,7 +13,7 @@
                     <span class="price">{{ $item['product']['price'] }}</span>
                     <span class="discount">%50</span>
                 </div>
-                <div class="old">{{ $item['product']['old_price'] }}</div>
+                <div class="old">{{ $item['product']['oldPrice'] }}</div>
             </div>
         </div>
     </div>

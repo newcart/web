@@ -25,11 +25,7 @@ class HomeController extends Controller
         $data['section_carousel3'] =  \WebService::home_section_carousel(3);
         $data['favorite_brands'] =  \WebService::home_favorite_brands();
 
-        $homeModel = new Home();
-        $data['section_category'] = $homeModel->get_section_category_data();
-        $data['section_image1'] = $homeModel->get_section_image1_data();
-        $data['section_image2'] = $homeModel->get_section_image2_data();
-        $data['section_firsat'] = $homeModel->get_section_firsat_data();
+    
 
 
         return view('home.index',$data);
