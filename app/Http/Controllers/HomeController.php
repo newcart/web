@@ -15,17 +15,17 @@ class HomeController extends Controller
     public function index()
     {
 
-        $data['main_slider'] =  \WebService::home_main_slider();
+        $data['main_slider']       =  \WebService::home_main_slider();
         $data['section_category1'] =  \WebService::home_section_category(1);
-        $data['section_grid1'] =  \WebService::home_section_grid(1);
-        $data['section_grid2'] =  \WebService::home_section_grid(2);
-        $data['section_grid3'] =  \WebService::home_section_grid(3);
+        $data['section_grid1']     =  \WebService::home_section_grid(1);
+        $data['section_grid2']     =  \WebService::home_section_grid(2);
+        $data['section_grid3']     =  \WebService::home_section_grid(3);
         $data['section_carousel1'] =  \WebService::home_section_carousel(1);
         $data['section_carousel2'] =  \WebService::home_section_carousel(2);
         $data['section_carousel3'] =  \WebService::home_section_carousel(3);
-        $data['favorite_brands'] =  \WebService::home_favorite_brands();
+        $data['favorite_brands']   =  \WebService::home_favorite_brands();
 
-    
+
 
 
         return view('home.index',$data);

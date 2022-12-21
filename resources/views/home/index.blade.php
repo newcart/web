@@ -3,7 +3,6 @@
     <title>Akilliphone - Online Store</title>
 @endsection
 @section('content')
-    <x-section.main-slider :slider="$main_slider['items']" />
     @if(isset($section_category)&& !empty($section_category))
         <x-section.category :title="$section_category['title']" :items="$section_category['items']" :banner="$section_category['banner']" />
     @endif
