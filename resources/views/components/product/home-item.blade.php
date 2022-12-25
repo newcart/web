@@ -1,6 +1,6 @@
 <div class="product-item">
     <div class="product-image">
-        <a href="{{ $item['url'] }}">
+        <a href="{{ url('urun') }}/{{ $item['slug'] }}">
             <img class="lazyload" width="160" height="160" data-src="{{ $item['image'] }}" alt="product image" src="{{ $item['image'] }}">
         </a>
     </div>
