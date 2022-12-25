@@ -89,7 +89,7 @@
                                 <div class="product-color-btn">
                                     <span class="title">Seçenekler:</span>
                                     <template v-for="variant  in product.variants">
-                                        <div class="color-btn" :data-slug="variant.slug" >
+                                        <div class="color-btn" :data-slug="variant.slug" :data-id="variant.id">
                                             <img :src="variant.image" style="width: 24px; height: 24px;">
                                         </div>
                                     </template>
@@ -195,7 +195,7 @@
         $('body').on('click', '.color-btn', function(){
 
             var settings = {
-                "url": "https://json.akilliphone.com/product/" + $(this).data('slug') + "/",
+                "url": "https://json.akilliphone.com/product/" + $(this).data('id') + "/",
                 'cache': false,
                 "async": true,
                 "crossDomain": true,
