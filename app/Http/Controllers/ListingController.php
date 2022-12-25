@@ -15,6 +15,7 @@ class ListingController extends Controller
     public function index(Request $request)
     {
         $products = $this->getFilteredProduct($request);
+        return $products;
     }
     public function category(Request $request)
     {
@@ -28,7 +29,6 @@ class ListingController extends Controller
     {
         $filter = new \WebServiceFilter($request);
         return($filter->getWebserviceJson());
-
     }
 
 }

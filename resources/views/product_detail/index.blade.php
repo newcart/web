@@ -58,7 +58,7 @@
                         <div class="swiper-pagination d-none"></div>
                     </div>
                 </div>
-                <div id="app" class="right">
+                <div id="app-basic" class="right">
                     <div class="product-details-area">
                         <div class="details-top">
                             <ul class="details-top-left">
@@ -66,13 +66,9 @@
                                 <li class="comment"><a href="#">Yorum Yap</a></li>
                             </ul>
                             <ul class="details-top-right">
-                                <li>Barcode:<br>
-                                    1000058453192
-                                </li>
+                                <li>Barcode:<br>@{{ product.barcode }}</li>
                                 <li>
-                                    Ürün Kodu:<br>
-                                    261311
-                                </li>
+                                    Ürün Kodu:<br>@{{ product.mainCode }}</li>
                             </ul>
                         </div>
                         <div class="detail-title-area">
@@ -92,20 +88,16 @@
                                 <div class="product-oldprice"><span v-text="product.oldPrice"></span><span v-text="product.currency"></span></div>
                             </div>
                             <div class="mobil-taksit-info"><span>290,03 TL x 9 ay’a varan Taksit seçenekleri</span></div>
+
                             <div class="product-color-btn">
-                                <span class="title">Renk:</span>
-                                <div class="color-btn" data-id="1">
-                                    <button style="background:#808080;"></button>
-                                </div>
-                                <div class="color-btn" data-id="2">
-                                    <button style="background:#000000;"></button>
-                                </div>
-                                <div class="color-btn">
-                                    <button style="background:#8FA4C1;"></button>
-                                </div>
-                                <div class="color-btn">
-                                    <button style="background:#D5B79F;"></button>
-                                </div>
+                                <span class="title">Seçenekler:</span>
+                                <template v-for="variant  in product.variants">
+                                    <div class="color-btn" :data-slug="variant.slug" >
+                                        <img :src="variant.image" style="width: 24px; height: 24px;">
+                                        </div>
+                                </template>
+
+
                             </div>
                             <div class="product-price-area-bottom">
                                 <div class="qty-input">
@@ -160,7 +152,7 @@
         </div>
     </section>
     <section>
-        <div class="container">
+        <div class="container" id="app-detail">
             <div class="product-spec-tabs">
                 <div class="tab">
                     <button class="tabSpec active" onclick="openSpec(event, 'Aciklama')">Açıklama</button>
@@ -169,106 +161,7 @@
                     <button class="tabSpec" onclick="openSpec(event, 'Taksit')">Taksit Seçenekleri</button>
                 </div>
                 <div id="Aciklama" class="tabDetails" style="display:block;">
-                    <p>2’si 1 Arada Mini USB Hava Soğutucu Taşınabilir Klima Nemlendirici Arıtma 3 Modlu Masaüstü
-                        Soğutma Fanı - Beyaz <br>
-                        Her yerde serin, temiz havanın tadını çıkarın
-                    </p>
-                    <ul>
-                        <li>Farklı talebinizi karşılayabilecek 3 mod hızı</li>
-                        <li>Sadece suyla doldurun, herhangi bir standart duvar prizine veya USB bağlantı noktasına takın ve keyfini
-                            çıkarın</li>
-                        <li>Bu kişisel alan hava soğutucusu, küçük bir fanın boyutunu ve güç tüketimini kullanırken aslında en çok
-                            ihtiyacınız olan etrafınızdaki havayı soğutur.</li>
-                    </ul>
-                    <span style="font-size: 20px;color: #000;">Genel Bilgiler:</span>
-                    <ul>
-                        <li>Güç kaynağı modu: USB</li>
-                        <li>Anma gerilimi: 3.7V</li>
-                        <li>Nominal güç: 3.7W</li>
-                        <li>Uygulanabilir alan: 20 metrekare içinde</li>
-                        <li>Gürültü: 36dB veya daha az</li>
-                        <li>Hava besleme yöntemi: yaprakları çevirin</li>
-                        <li>Rüzgar hızı modu: üçüncü modlar</li>
-                        <li>Çalışma modu: mekanik</li>
-                        <li>Şarjı destekleyip desteklemeyeceği: destek</li>
-                        <li>Düşerken otomatik olarak dur: desteklenmiyor</li>
-                        <li>Dahili pil kapasitesi: 1500mAh lityum pil</li>
-                        <li>Malzeme: Plastik</li>
-                        <li>Öne çıkan işlev: fan/nemlendirici</li>
-                    </ul>
-                    <span style="font-size: 20px;color: #000;">Paket İçeriği:</span>
-                    <ul>
-                        <li>Güç kaynağı modu: USB</li>
-                        <li>Anma gerilimi: 3.7V</li>
-                        <li>Nominal güç: 3.7W</li>
-                    </ul>
-                    <table class="product_table">
-                        <tr class="header_table">
-                            <th>Genel Bilgiler</th>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td>Marka</td>
-                            <td>Yok</td>
-                        </tr>
-                        <tr>
-                            <td>Sertifika</td>
-                            <td>CE</td>
-                        </tr>
-                        <tr>
-                            <td>Renk</td>
-                            <td>Beyaz</td>
-                        </tr>
-                        <tr>
-                            <td>Perakende Ambalaj</td>
-                            <td>Renkli Kutu</td>
-                        </tr>
-                        <tr>
-                            <td>Kullanım Kılavuzu (Dil)</td>
-                            <td>İngilizce ve Çince</td>
-                        </tr>
-                        <tr>
-                            <td>Brüt Ağırlık</td>
-                            <td>0.728kg</td>
-                        </tr>
-                        <tr>
-                            <td>Hacim Ağırlığı</td>
-                            <td>0.238kg</td>
-                        </tr>
-                        <tr>
-                            <td>Paket Uzunluğu</td>
-                            <td>16.300cm</td>
-                        </tr>
-                        <tr>
-                            <td>Paket Genişliği</td>
-                            <td>12.300cm</td>
-                        </tr>
-                        <tr>
-                            <td>Paket Yüksekliği</td>
-                            <td>5.300cm</td>
-                        </tr>
-                        <tr>
-                            <td>Bir Paket Ağırlığı</td>
-                            <td>0.650kg</td>
-                        </tr>
-                        <tr>
-                            <td>Barkod</td>
-                            <td>654846451</td>
-                        </tr>
-                    </table>
-
-                    <div class="product-images">
-                        <img class="lazyload" width="790" height="890" data-src="{{ url('assets/images/details-images/1.png') }}" alt="">
-                        <img class="lazyload" width="790" height="890" data-src="{{ url('assets/images/details-images/2.png') }}" alt="">
-                        <img class="lazyload" width="790" height="890" data-src="{{ url('assets/images/details-images/3.png') }}" alt="">
-                        <img class="lazyload" width="790" height="890" data-src="{{ url('assets/images/details-images/4.png') }}" alt="">
-                        <img class="lazyload" width="790" height="890" data-src="{{ url('assets/images/details-images/5.png') }}" alt="">
-                        <img class="lazyload" width="790" height="890" data-src="{{ url('assets/images/details-images/6.png') }}" alt="">
-                    </div>
+                    <p>@{{ product.description }}</p>
                 </div>
 
                 <div id="Yorum" class="tabDetails">
@@ -423,12 +316,19 @@
                     product: product
                 }
             }
-        }).mount('#app');
+        }).mount('#app-basic');
+        var detail = createApp({
+            data() {
+                return {
+                    product: product
+                }
+            }
+        }).mount('#app-detail');
 
-        $('.color-btn').on('click', function(){
+        $('body').on('click', '.color-btn', function(){
 
             var settings = {
-                "url": "https://json.akilliphone.com/product/" + $(this).data('id') + "/",
+                "url": "https://json.akilliphone.com/product/" + $(this).data('slug') + "/",
                 'cache': false,
                 "async": true,
                 "crossDomain": true,
@@ -440,7 +340,8 @@
 
             $.ajax(settings).done(function (response) {
                 app.product = response.data;
-                window.history.pushState("nextState", response.data.name, '{{ url('/') }}/' + response.data.url);
+                detail.product = response.data;
+                window.history.pushState("nextState", response.data.name, '{{ url('urun/') }}/' + response.data.slug);
             });
         });
 

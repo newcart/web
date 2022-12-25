@@ -20,8 +20,9 @@ class WebServiceFilter{
         $this->fetchOffset($request);
     }
     private function fetchBrands(Request $request){
-        $get_query = $request->get('brand', '');
-        $this->brands = explode(self::DELIMITER, $get_query);
+        if($get_query = $request->get('brand', '')){
+            $this->brands = explode(self::DELIMITER, $get_query);
+        }
     }
     public function setBrand($brand){
         if(!in_array($brand, $this->brands)){
@@ -29,8 +30,11 @@ class WebServiceFilter{
         }
     }
     private function fetchCategories(Request $request){
-        $get_query = $request->get('cat', '');
-        $this->categories = explode(self::DELIMITER, $get_query);
+
+        if( $get_query = $request->get('cat', '')){
+            $this->categories = explode(self::DELIMITER, $get_query);
+        }
+
     }
     public function setCategoy($category){
         if(!in_array($category, $this->categories)){
@@ -38,8 +42,9 @@ class WebServiceFilter{
         }
     }
     private function fetchColors(Request $request){
-        $get_query = $request->get('color', '');
-        $this->colors = explode(self::DELIMITER, $get_query);
+        if($get_query = $request->get('color', '')){
+            $this->colors = explode(self::DELIMITER, $get_query);
+        }
     }
     public function setColor($color){
         if(!in_array($color, $this->colors)){
@@ -47,10 +52,12 @@ class WebServiceFilter{
         }
     }
     private function fetchPrices(Request $request){
-        $get_query = $request->get('min_price', 0);
-        $this->prices['min'] = $get_query;
-        $get_query = $request->get('max_price', 0);
-        $this->prices['max'] = $get_query;
+        if($get_query = $request->get('min_price', 0)){
+            $this->prices['min'] = $get_query;
+        }
+        if($get_query = $request->get('max_price', 0)){
+            $this->prices['max'] = $get_query;
+        }
     }
     public function setPrice($pos, $price){
         if($pos=='min'){
@@ -60,8 +67,9 @@ class WebServiceFilter{
         }
     }
     private function fetchText(Request $request){
-        $get_query = $request->get('text', '');
-        $this->text = $get_query;
+        if($get_query = $request->get('text', '')){
+            $this->text = $get_query;
+        }
     }
     public function setText($text){
         $this->text = $text;
