@@ -14,8 +14,8 @@ class ListingController extends Controller
      */
     public function index(Request $request)
     {
-        $products = $this->getFilteredProduct($request);
-        return $products;
+        $data = [];//$this->getFilteredProduct($request);
+        return view('listing.index',$data);
     }
     public function category(Request $request)
     {
