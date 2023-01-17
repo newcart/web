@@ -45,19 +45,19 @@
                         <div class="content">
                             <input class="search" type="text" placeholder="Marka Ara">
                             <label for="ally">
-                                <input type="checkbox" class="option-input" id="ally" >
+                                <input type="checkbox" class="option-input forfilter brands " id="ally" value="ally" >
                                 Ally
                             </label>
-                            <label for="Baseus">
-                                <input type="checkbox" class="option-input" id="baseus">
+                            <label for="baseus">
+                                <input type="checkbox" class="option-input forfilter brands" id="baseus" value="baseus">
                                 Baseus
                             </label>
                             <label for="DUX DUCİS">
-                                <input type="checkbox" class="option-input" id="DUX DUCİS"  >
+                                <input type="checkbox" class="option-input forfilter brands" id="DUX DUCİS" value="DUX DUCİS" >
                                 DUX DUCİS
                             </label>
                             <label for="Ezere">
-                                <input type="checkbox" class="option-input" id="Ezere" >
+                                <input type="checkbox" class="option-input forfilter brands" id="Ezere"  value="Ezere" >
                                 Ezere
                             </label>
                         </div>
@@ -65,20 +65,20 @@
                     <div class="filtermenu-box">
                         <div class="title">fiyat aralığı</div>
                         <div class="content">
-                            <label for="ten">
-                                <input type="radio" class="option-input" id="ten"  name="fiyat" >
+                            <label for="10">
+                                <input type="radio" class="option-input forfilter price" id="10"  name="fiyat" value="10">
                                 0 - 10 TL
                             </label>
                             <label for="25">
-                                <input type="radio" class="option-input" id="25"  name="fiyat">
+                                <input type="radio" class="option-input forfilter price" id="25"  name="fiyat" value="25">
                                 10 - 25 TL
                             </label>
-                            <label for="hundred">
-                                <input type="radio" class="option-input" id="hundred"  name="fiyat">
+                            <label for="100">
+                                <input type="radio" class="option-input forfilter price" id="100"  name="fiyat" value="100">
                                 25 - 100 TL
                             </label>
-                            <label for="thousand">
-                                <input type="radio" class="option-input" id="thousand"  name="fiyat">
+                            <label for="1000">
+                                <input type="radio" class="option-input forfilter price" id="1000"  name="fiyat" value="1000">
                                 100 - 1.000 TL
                             </label>
                         </div>
@@ -87,15 +87,15 @@
                         <div class="title">teslimat</div>
                         <div class="content">
                             <label for="freeshipping">
-                                <input type="checkbox" class="option-input" id="freeshipping">
+                                <input type="checkbox" class="option-input forfilter shippings " id="freeshipping" value="freeshipping">
                                 Ücretsiz Kargo
                             </label>
                             <label for="superfast">
-                                <input type="checkbox" class="option-input" id="superfast">
+                                <input type="checkbox" class="option-input forfilter shippings" id="superfast" value="superfast">
                                 Süper Hızlı
                             </label>
                             <label for="todayshipping">
-                                <input type="checkbox" class="option-input" id="todayshipping">
+                                <input type="checkbox" class="option-input forfilter shippings" id="todayshipping" value="todayshipping">
                                 Bugün Teslimat
                             </label>
                         </div>
@@ -104,27 +104,27 @@
                         <div class="title">renk</div>
                         <div class="content">
                             <label for="Turkuaz">
-                                <input type="checkbox" class="color forfilter" id="Turkuaz" style="background-color:#27BC9C;">
+                                <input type="checkbox" class="color forfilter" id="Turkuaz" style="background-color:#27BC9C;" value="Turkuaz">
                                 Turkuaz
                             </label>
                             <label for="Mint Yeşil">
-                                <input type="checkbox" class="color forfilter" id="Mint Yeşil" style="background-color:#36CC73;">
+                                <input type="checkbox" class="color forfilter" id="Mint Yeşil" style="background-color:#36CC73;" value="Mint Yeşil">
                                 Mint Yeşil
                             </label>
                             <label for="Sarı">
-                                <input type="checkbox" class="color forfilter" id="Sarı" style="background-color:#F0C32C;">
+                                <input type="checkbox" class="color forfilter" id="Sarı" style="background-color:#F0C32C;" value="Sarı">
                                 Sarı
                             </label>
                             <label for="Turuncu">
-                                <input type="checkbox" class="color forfilter" id="Turuncu" style="background-color:#E47D2E;">
+                                <input type="checkbox" class="color forfilter" id="Turuncu" style="background-color:#E47D2E;" value="Turuncu">
                                 Turuncu
                             </label>
                             <label for="Mavi">
-                                <input type="checkbox" class="color forfilter" id="Mavi" style="background-color:#2E80B7;">
+                                <input type="checkbox" class="color forfilter" id="Mavi" style="background-color:#2E80B7;" value="Mavi">
                                 Mavi
                             </label>
                             <label for="Kırmızı">
-                                <input type="checkbox" class="color" id="Kırmızı" style="background-color:#E54A41;">
+                                <input type="checkbox" class="color forfilter" id="Kırmızı" style="background-color:#E54A41;" value="Kırmızı">
                                 Kırmızı
                             </label>
                         </div>
@@ -221,10 +221,10 @@
                             <button class="tabSpec" onclick="openSpec(event, 'highPrice')">En yüksek fiyat</button>
                         </div>
                         <div class="tab-right">
-                            <select name="more">
+                            <select name="more" onchange="siralama" id="siralama">
                                 <option value="" disabled selected hidden>Diğer</option>
-                                <option value="">Sıralama 1</option>
-                                <option value="">Sıralama 2</option>
+                                <option value="" >Ada Göre Sıralama (A-Z) </option>
+                                <option value="" onclick="zasiralama()">Ada Göre Sıralama (Z-A)</option>
                             </select>
                             <!-- <div class="view-buttons">
                               <button class="list-btn"><img src="assets/images/list.svg" alt=""></button>
@@ -267,28 +267,6 @@
 @endsection
 @section('js')
     <script>
-$(document).on('change', '.forfilter', function(){
-    let url_filter = [];
-    const renkler = renkal();
-    if(renkler){
-        url_filter.push('color=' + renkler) ;
-    }
-    url_filter.push('text=hello');
-    url_filter.push('ofset=100');
-    url_filter.push('limit=20');
-    console.log( 'https://json.akilliphone.com/urunler?'  + url_filter.join('&'));
-});
-function renkal(){
-    let colors = []
-    $('.color').each(function(){
-        if($(this).is(':checked')){
-            colors.push($(this).attr('id'))
-        }
-    });
-    console.log(colors);
-    return colors.join(',');
-}
-
         $(document).ready(function(){
             const { createApp } = Vue;
             app = createApp({
@@ -302,28 +280,17 @@ function renkal(){
                     }
                 }
             }).mount('#app-basic');
-            getFilteredProduct();
-        });
-        $('body').on('click', '.option-input', function(){
-            getFilteredProduct();
+            let fitered_url =  'https://json.akilliphone.com/product/products/?'  + webService.createFilter();
+            webService.getFilteredProducts(fitered_url)
         });
 
-        function getFilteredProduct(){
-            var settings = {
-                "url": "https://json.akilliphone.com/product/products/",
-                'cache': false,
-                "async": true,
-                "crossDomain": true,
-                "method": "GET",
-                "headers": {
-                    "Access-Control-Allow-Origin":"*"
-                }
-            };
+        $(document).on('change', '.forfilter', function(){
+            let fitered_url =  'https://json.akilliphone.com/product/products/?'  + webService.createFilter();
+            webService.getFilteredProducts(fitered_url)
+        });
 
-            $.ajax(settings).done(function (response) {
-                app.data = response.data;
-            });
-        }
+
+
     </script>
     <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
     <script src="./assets/js/owl.carousel.min.js"></script>
