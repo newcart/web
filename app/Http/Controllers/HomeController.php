@@ -24,6 +24,7 @@ class HomeController extends Controller
         $data['section_carousel2'] =  \WebService::home_section_carousel(2);
         $data['section_carousel3'] =  \WebService::home_section_carousel(3);
         $data['favorite_brands']   =  \WebService::home_favorite_brands();
+        
 
 
 

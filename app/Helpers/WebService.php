@@ -31,6 +31,9 @@ class WebService{
     public static function home_favorite_brands(){
         return self::request('home/favorite-brands');
     }
+    public static function contact_us(){
+        return self::request('config/general');
+    }
     private static function request($endpoint, $data=[], $method='GET', $token_required=false){
         $result = [];
         try{

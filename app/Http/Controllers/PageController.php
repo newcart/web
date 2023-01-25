@@ -19,12 +19,23 @@ class PageController extends Controller
     }
     public function bizeulasin()
     {
+        $data['config_general']   =  \WebService::contact_us();
 
-        return view('page.bize-ulasin');
+        return view('page.bize-ulasin',$data);
     }
     public function dropshipping()
     {
 
         return view('page.dropshipping');
+    }
+    public function login()
+    {
+
+        return view('login.login');
+    }
+    public function signUp()
+    {
+
+        return view('login.sign-up');
     }
 }

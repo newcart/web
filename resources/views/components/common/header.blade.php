@@ -126,7 +126,7 @@
                 </a>
                 <div class="login-btn">Giriş Yap
                     <div class="dropdown-box">
-                        <a class="login-link" href="">Üye Girişi</a>
+                        <a class="login-link" href="giris-yap">Üye Girişi</a>
                         <a class="login-link" href="">Bayi Girişi</a>
                     </div>
                 </div>

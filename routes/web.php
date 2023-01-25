@@ -20,6 +20,8 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/hakkimizda', [PageController::class, 'hakkimizda'])->name('hakkimizda');
 Route::get('/bize-ulasin', [PageController::class, 'bizeulasin'])->name('bizeulasin');
 Route::get('/dropshipping', [PageController::class, 'dropshipping'])->name('dropshipping');
+Route::get('/giris-yap', [PageController::class, 'login'])->name('login');
+Route::get('/uye-ol', [PageController::class, 'signUp'])->name('signUp');
 Route::get('/webservice/home/main-slider', [WebServiceController::class, 'home_main_slider'])->name('main_slider');
 Route::get('/webservice/home/section-category1', [WebServiceController::class, 'section_category1'])->name('section_category1');
 Route::get('/webservice/home/section-grid1', [WebServiceController::class, 'section_grid1'])->name('section_grid1');

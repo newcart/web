@@ -2,6 +2,7 @@
 @section('head')
     <title>Bize Ulaşın - AkıllıPhone</title>
     <link rel="stylesheet" href="assets/css/contact-us.css">
+
 @endsection
 @section('content')
 
@@ -14,16 +15,16 @@
                 <div class="col-12 col-lg-6">
                     <form action="">
                         <div class="input-group">
-                            <input type="text" placeholder="İsim Soyisim" required>
+                            <input type="text" placeholder="İsim Soyisim" required id="isim">
                         </div>
                         <div class="input-group">
-                            <input type="email" placeholder="E-Posta Adresiniz" required>
+                            <input type="email" placeholder="E-Posta Adresiniz" id="email" required >
                         </div>
                         <div class="input-group">
-                            <textarea type="email" rows="10" placeholder="Mesajınız" required></textarea>
+                            <textarea type="email" rows="10" placeholder="Mesajınız" required id="message"></textarea>
                         </div>
-                        <div class="button-group">
-                            <a class="submit-btn" href="">Gönder</a>
+                        <div class="button-group" id="sendMessage">
+                            <a class="submit-btn" href="#" onclick="sendMessage()">Gönder</a>
                             <a class="whatsapp" href=""></a>
                         </div>
                     </form>
@@ -36,16 +37,21 @@
                         <div class="row">
                             <div class="address-box left">
                                 <div class="title">Adres:</div>
-                                <a href="https://goo.gl/maps/pRqh2XgayihMwyxZ8">Ardıçlı Mah, Doğan Araslı Blv. No:230,
-                                    34517 Esenyurt/İstanbul</a>
+                                <a href="https://goo.gl/maps/pRqh2XgayihMwyxZ8">
+
+                                        {{$config_general['address']}}
+
+
+                                </a>
+
                             </div>
                             <div class="address-box right">
                                 <div class="title">İletişim</div>
                                 <div class="link">
-                                    <a href="tel:08504609070">T:&nbsp;0850 460 9070</a>
+                                    <a href="tel:08504609070">T:&nbsp;{{$config_general['phone1']}}</a>
                                 </div>
                                 <div class="link">
-                                    <a href="mailto:info@akilliphone.com">T:&nbsp;info@akilliphone.com</a>
+                                    <a href="mailto:info@akilliphone.com">T: {{$config_general['email']}}</a>
                                 </div>
                             </div>
                         </div>
@@ -53,13 +59,10 @@
                             <div class="title">Çalışma Saatleri</div>
                             Pazartesi-Cumartesi günleri 09:00 - 19:00 arasında hizmet vermekteyiz.
                         </div>
-                        <div class="address-box">
-                            <div class="title">Açıklamalar</div>
-                            Kep Adresi : akilliphone@hs01.kep.tr <br>
-                            Mersis No : 048429815481854841 <br>
-                            Ticaret Sicil Müdürlüğü, Ticaret Sicil No : XXXX
-                        </div>
+
                     </div>
+
+
                 </div>
             </div>
         </div>
@@ -67,5 +70,19 @@
 
 @endsection
 @section('js')
+    <script type="text/javascript">
 
+        
+                function sendMessage() {
+
+                let name = document.getElementById("isim").value;
+                let mail = document.getElementById("email").value;
+                let message = document.getElementById("message").value;
+
+                getSupport.getMessage(name, mail, message);
+
+                     }
+
+
+    </script>
 @endsection

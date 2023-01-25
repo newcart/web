@@ -10,7 +10,7 @@
                     <div class="text-bottom">Tüm kampanya ve fırsatlarımız e-posta kutunuza gelsin</div>
                 </div>
                 <div class="bulletin-right">
-                    <form action="">
+                    <form action="uye-ol">
                         <input placeholder="E-posta Adresiniz" type="text">
                         <button>kayıt ol</button>
                     </form>

@@ -1,7 +1,5 @@
 var webService = {
-    'init': function(){
-        console.log('init');
-    },
+
     'getFilteredProducts': function(url){
         var settings = {
             "url": url,
@@ -77,5 +75,5 @@ var webService = {
         console.log(url_filter.join('&'));
         return url_filter.join('&');
     }
+
 }
-webService.init();

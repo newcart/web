@@ -236,7 +236,7 @@
                         <div id="bestSell" class="tabDetails" style="display:block;">
                             <div class="product-items">
                                 <div class="product-wrapper" >
-                                    <template v-for="item in data.items">
+                                    <template v-for="item in data">
                                         <div class="product-item" >
                                             <a href="#">
                                                 <div class="product-image">
